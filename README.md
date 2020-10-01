@@ -8,3 +8,4 @@
 * Victor Cotton
 * Igor Vandervelden
 * Rodrigue Mugisha
+* Léon Servais
