@@ -1,0 +1,148 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/louisBrochet5/devWebRestApi/1.0.0
+  - description: Serveur de l'API.
+    url: https://www.wt1-2.ephec-ti.be:3000/api
+info:
+  description: Cette API permet de gérer la base de données du projet DevWeb
+  version: "1.0.0"
+  title: DevWebRestAPI
+  contact:
+    email: l.brochet@students.ephec.be
+tags:
+  - name: Niveau 1
+    description: Opérations sur une table
+  - name: Niveau 2
+    description: Opérations sur plusieurs tables
+paths:
+  /Points:
+    get:
+      tags:
+        - Niveau 1
+      summary: Récupération des points
+      operationId: recupPoints
+      description:
+        Avec les bons paramètres vous pourrez récupérer uniquement le/les point(s) dont vous avez besoin.
+      parameters:
+        - in: query
+          name: idPoint
+          description: Vous permet de récupérer un point en fonction de son id.
+          schema:
+            type: integer
+        - in: query
+          name: namePoint
+          description: Vous permet de récupérer un point en fonction de son nom.
+          schema:
+            type: string
+        - in: query
+          name: vernaculairePoint
+          description: Vous permet de récupérer un point en fonction de son nom vernaculaire.
+          schema:
+            type: string
+        - in: query
+          name: descriptionPoint
+          description: Vous permet de récupérer un point en fonction de sa description.
+          schema:
+            type: string
+        - in: query
+          name: disponiblePoint
+          description: Vous permet de récupérer un point en fonction de sa disponibilité.
+          schema:
+            type: integer
+            minimum: 0
+            maximum: 1
+      responses:
+        '200':
+          description: "La requête n'a pas généré d'erreur. /!\\ Si la réponse est vide c'est que la valeur d'un des paramètres n'existe pas dans la base de données."
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Points'
+        '500':
+          description: "Si l'API vous répond avec une erreur 500 c'est soit un problème dans votre requête soit un bug de l'API."
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: 'whoa!'
+    post:
+      tags:
+        - Niveau 1
+      summary: 'Ajout de points'
+      operationId: ajoutPoint
+      description:
+        "Permet d'ajouter un point à la base de données."
+      requestBody:
+        description: "/!\ Ne pas mettre d'id dans le request body il est auto-incrémenté automatiquement."
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Points'
+            example:
+              namePoint: 'Salix alba cv. tristis'
+              descriptionPoint: 'Le Saule blanc, Saule commun, Saule argenté, Osier blanc, ou Saule Vivier (Salix alba L.), ...'
+              latitudePoint: 167823.3803000003
+              longitudePoint: 150998.59340000153
+              vernaculairePoint: 'Saule blanc pleureur'
+              disponiblePoint: 1
+        required: true
+      responses:
+        '200':
+          description: "La requête n'a pas généré d'erreur. /!\\ Si la réponse est vide c'est que la valeur d'un des paramètres n'existe pas dans la base de données."
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Points'
+        '500':
+          description: "Si l'API vous répond avec une erreur 500 c'est soit un problème dans votre requête soit un bug de l'API."
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: 'whoa!'
+
+
+  /Categories:
+    get:
+      tags:
+        - Niveau 1
+
+
+
+components:
+  schemas:
+    Points:
+      type: object
+      required:
+        - idPoint
+        - namePoint
+        - vernaculairePoint
+      properties:
+        idPoint:
+          type: integer
+          example: 1
+        namePoint:
+          type: string
+          example: 'Salix alba cv. tristis'
+        descriptionPoint:
+          type: string
+          example: 'Le Saule blanc, Saule commun, Saule argenté, Osier blanc, ou Saule Vivier (Salix alba L.), ...'
+        latitudePoint:
+          type: integer
+          example: 167823.3803000003
+        longitudePoint:
+          type: integer
+          example: 150998.59340000153
+        vernaculairePoint:
+          type: string
+          example: 'Saule blanc pleureur'
+        disponiblePoint:
+          type: integer
+          example: 1
