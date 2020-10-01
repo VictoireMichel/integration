@@ -7,7 +7,7 @@ CREATE TABLE plants (
 	monthEnd text NOT NULL,
 	maintenance text,
 	soil text NOT NULL,
-	watering int(3) NOT NULL,
+	luminosity int(1) NOT NULL,
 	picturePath text,
 	CONSTRAINT text_monthStart CHECK (monthStart in('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre')),
 	CONSTRAINT text_monthEnd CHECK (monthEnd in('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'))
