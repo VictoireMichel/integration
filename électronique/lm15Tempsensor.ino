@@ -18,12 +18,12 @@ int value = analogRead(TEMPSIGNALPIN); // Lis le pin analog 5
 
 delay(1000); // Ici on peut définir dans quel intervalle on va mésurer la temp
 Serial.println(value); 
-int milliVolt = (value * 5000.0) / 1024.0; // Rechnung um die Spannung in milli Volt anzugeben
+int milliVolt = (value * 5000.0) / 1024.0; // Calcul pour indiquer la tension en milli Volt
 Serial.print(milliVolt);
 
 
 
-int celius = milliVolt/10; // Rechnung um die milli Volt in Celius anzugeben
+int celius = milliVolt/10; // Calcul pour afficher les milli Volt en celcius
 Serial.print(celius);
 
 
