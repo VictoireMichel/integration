@@ -1,16 +1,7 @@
-/////////////APP///////////////////////////////////////////
-
-const express = require('express');
+const express = require("express");
+const dotenv = require('dotenv').config();
 const app = express();
-const port = 3000
-
-app.get('/', (req, res) =>{
-    res.send('ça fonctionne')
-});
-
-app.listen(port, () => {
-    console.log('App listening on port ' + port )
-});
-
-/////////////BDD///////////////////////////////////////////
-
+const config = require("./config/config");
+const modelPlants = require("./models/modelPlants");
+const modelUsers = require("./models/modelUsers");
+app.listen(3000);
