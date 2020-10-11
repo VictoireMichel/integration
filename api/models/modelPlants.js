@@ -1,6 +1,5 @@
-const {Model, DataTypes} = require("sequelize");
-const config = require("../config/config");
-const sequelize = config.sequelize;
+const seq = require("../config/config");
+const Sequelize = seq.Sequelize, Model = seq.Model, sequelize = seq.sequelize, DataTypes = seq.DataTypes;
 
 class Plants extends Model {}
 
@@ -46,13 +45,21 @@ Plants.init({
     picturePath: {
         type: DataTypes.TEXT,
         allowNull: true
+    },
+    humidity: {
+        type: DataTypes.INTEGER('3'),
+        allowNull: false
     }
 }, {
     sequelize,
     modelName: 'Plants',
-}
-);
+});
+
+module.exports = Plants;
 
 Plants.sync()
     .then(() => console.log("Synchronisation plants réussie !"))
     .catch((error) => console.log("Erreur synchronisation plants !", error));
+
+
+
