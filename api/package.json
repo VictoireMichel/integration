@@ -2,9 +2,9 @@
   "name": "egrow_api",
   "version": "0.0.1",
   "description": "API REST CRUD for eGrow Solution",
-  "main": "api/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node api/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
