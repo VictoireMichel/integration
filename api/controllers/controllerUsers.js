@@ -1,13 +1,13 @@
-const Plants = require("../models/modelPlants");
+const Users = require("../models/modelUsers");
 
 exports.getAll = function(req, res) {
-    Plants.findAll()
+    Users.findAll()
         .then(results => res.json(results))
         .catch(error => res.status(400).json({error}));
 };
 
 exports.getOne = function(req, res) {
-    Plants.findAll({
+    Users.findAll({
         where: {
             id: req.query.id
         }
@@ -15,4 +15,3 @@ exports.getOne = function(req, res) {
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
 };
-

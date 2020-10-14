@@ -7,8 +7,8 @@ sequelize.authenticate()
     .catch((error) => console.error('Unable to connect to the database:', error));
 
 let seq  = {};
-seq.sequelize = sequelize;
-seq.Sequelize = Sequelize;
+seq.sequelize = sequelize; // -> instance sequelize
+seq.Sequelize = Sequelize; // -> librairie sequelize
 seq.Model = Model;
 seq.DataTypes = DataTypes;
 module.exports = seq;

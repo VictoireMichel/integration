@@ -23,11 +23,11 @@ Plants.init({
         allowNull: false
     },
     monthStart: {
-        type: DataTypes.TEXT,
+        type: DataTypes.INTEGER('2'),
         allowNull: false
     },
     monthEnd: {
-        type: DataTypes.TEXT,
+        type: DataTypes.INTEGER('2'),
         allowNull: false
     },
     maintenance: {
