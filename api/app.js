@@ -8,7 +8,7 @@ app.use("/plants", routePlants);
 
 /* simple test pour avoir un rendu sur le '/' lors du déploiement sur Heroku */
 app.get('/', (req,res) => {
-    res.send('Hello World');
+    res.send('Changed');
 })
 
 app.listen(3000);
