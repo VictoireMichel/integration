@@ -1,4 +1,4 @@
-const {Sequelize, Model, DataTypes} = require("sequelize");
+const {Sequelize, Model, DataTypes, QueryInterface} = require("sequelize");
 const db = require("./db");
 const sequelize = new Sequelize(db);
 
@@ -11,4 +11,5 @@ seq.sequelize = sequelize; // -> instance sequelize
 seq.Sequelize = Sequelize; // -> librairie sequelize
 seq.Model = Model;
 seq.DataTypes = DataTypes;
+seq.QueryInterface = QueryInterface;
 module.exports = seq;

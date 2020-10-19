@@ -5,7 +5,7 @@ class Plants extends Model {}
 
 Plants.init({
     id: {
-        type: DataTypes.INTEGER('4'),
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
@@ -19,15 +19,15 @@ Plants.init({
         allowNull: true
     },
     growTime: {
-        type: DataTypes.INTEGER('3'),
+        type: DataTypes.INTEGER(3),
         allowNull: false
     },
     monthStart: {
-        type: DataTypes.INTEGER('2'),
+        type: DataTypes.INTEGER(2),
         allowNull: false
     },
     monthEnd: {
-        type: DataTypes.INTEGER('2'),
+        type: DataTypes.INTEGER(2),
         allowNull: false
     },
     maintenance: {
@@ -39,7 +39,7 @@ Plants.init({
         allowNull: false
     },
     luminosity: {
-        type: DataTypes.INTEGER('1'),
+        type: DataTypes.INTEGER(1),
         allowNull: false
     },
     picturePath: {
@@ -47,19 +47,21 @@ Plants.init({
         allowNull: true
     },
     humidity: {
-        type: DataTypes.INTEGER('3'),
+        type: DataTypes.INTEGER(3),
+        allowNull: false
+    },
+    temperatureMin: {
+        type: DataTypes.INTEGER(2),
+        allowNull: false
+    },
+    temperatureMax: {
+        type: DataTypes.INTEGER(2),
         allowNull: false
     }
+
 }, {
     sequelize,
     modelName: 'Plants',
 });
 
 module.exports = Plants;
-
-Plants.sync()
-    .then(() => console.log("Synchronisation plants réussie !"))
-    .catch((error) => console.log("Erreur synchronisation plants !", error));
-
-
-
