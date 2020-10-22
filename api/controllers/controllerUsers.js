@@ -15,7 +15,7 @@ exports.getOne = function(req, res) {
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
 };
-
+/*
 exports.create = (req, res) => {
     // Validate request
     if (!req.body) {
@@ -123,4 +123,4 @@ exports.create = (req, res) => {
                 });
             else res.send({ message: `All Customers were deleted successfully!` });
         });
-    };
+    };*/

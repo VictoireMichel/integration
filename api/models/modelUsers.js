@@ -33,7 +33,7 @@ Users.init({
     sequelize,
     modelName: 'Users',
 });
-
+/*
 const sql = require("./db.js");
 
 // constructor
@@ -148,3 +148,4 @@ Users.removeAll = result => {
 };
 
 module.exports = Users;
+*/
