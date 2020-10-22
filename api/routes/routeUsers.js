@@ -6,10 +6,10 @@ const ctrUsers = require("../controllers/controllerUsers");
 router.get("/all", (req, res)  => ctrUsers.getAll(req, res));
 //Get One route
 router.get("/one", (req, res)  => ctrUsers.getOne(req, res));
-/*
-// Create a new Customer
-router.post("/users", (req, res) => ctrUsers.create(req, res));
 
+// Create a new Customer
+router.post("/new", (req, res) => ctrUsers.create(req, res));
+/*
 // Retrieve all Customers
 router.get("/users", (req, res) => ctrUsers.findAll(req, res));
 
