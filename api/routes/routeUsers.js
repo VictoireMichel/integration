@@ -7,26 +7,21 @@ router.get("/all", (req, res)  => ctrUsers.getAll(req, res));
 //Get One route
 router.get("/one", (req, res)  => ctrUsers.getOne(req, res));
 
-module.exports = router;
-
-module.exports = app => {
-    const Users = require("../controllers/customer.controller.js");
-
     // Create a new Customer
-    app.post("/users", Users.create);
-
+    router.post("/users", (req, res) => ctrUsers.create(req, res));
     // Retrieve all Customers
-    app.get("/users", Users.findAll);
+    router.get("/users", (req, res) => ctrUsers.findAll(req, res));
 
     // Retrieve a single Customer with customerId
-    app.get("/users/:customerId", Users.findOne);
+    router.get("/users/:customerId",(req, res) => ctrUsers.findOne(req, res));
 
     // Update a Customer with customerId
-    app.put("/users/:customerId", Users.update);
+    router.put("/users/:customerId", (req, res) => ctrUsers.update(req, res));
 
     // Delete a Customer with customerId
-    app.delete("/users/:customerId", Users.delete);
+    router.delete("/users/:customerId", (req, res) => ctrUsers.delete(req, res));
 
     // Create a new Customer
-    app.delete("/users", Users.deleteAll);
-};
+    router.delete("/users", (req, res) => ctrUsers.deleteAll(req, res));
+
+module.exports = router;
