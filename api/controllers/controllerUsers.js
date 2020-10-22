@@ -15,14 +15,14 @@ exports.getOne = function(req, res) {
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
 };
-
+/*
 exports.create = function(req, res) {
     Users.findOrCreate()
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
 };
 
-/*
+
 exports.create = (req, res) => {
     // Validate request
     if (!req.body) {
