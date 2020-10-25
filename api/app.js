@@ -18,15 +18,17 @@ seq.sequelize.sync()
 ///////////////// Routes /////////////////////////////
 const routePlants = require("./routes/routePlants");
 const routeFilter = require("./routes/routeFilter");
+const routeUsers = require("./routes/routeUsers");
 app.use("/plants", routePlants);
 app.use("/filter", routeFilter);
+//app.use("/users", routeUsers);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
 /* simple test pour avoir un rendu sur le '/' lors du déploiement sur Heroku */
 const PORT = process.env.PORT || '3000';
 app.get('/', (req,res) => {
-    res.send('Hello there is a change again');
+    res.send('Hello, there has been a change since last time');
 });
 //////////////////////////////////////////////////////
 
