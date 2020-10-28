@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const ctrData = require("../controllers/controllerData");
 
-// Get All route
-router.get("/all", (req, res)  => ctrData.getAll(req, res));
-//Get One route
-router.get("/one", (req, res)  => ctrData.getOne(req, res));
+// Get last route
+router.get("/last", (req, res)  => ctrData.getLast(req, res));
+// Post data
+router.post("/upload", (req, res)  => ctrData.postUpload(req, res));
 
 module.exports = router;

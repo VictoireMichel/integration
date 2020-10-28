@@ -19,9 +19,11 @@ seq.sequelize.sync()
 const routePlants = require("./routes/routePlants");
 const routeFilter = require("./routes/routeFilter");
 const routeUsers = require("./routes/routeUsers");
+const routeData = require("./routes/routeData");
 app.use("/plants", routePlants);
 app.use("/filter", routeFilter);
 //app.use("/users", routeUsers);
+app.use("/data", routeData);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
