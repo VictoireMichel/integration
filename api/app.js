@@ -8,8 +8,9 @@ const session = require('express-session');
 ///////////////// Views ///////////////////////////
 const exphbs = require('express-handlebars');
 
+
 //For Handlebars
-app.set('views', './app/views')
+app.set('views', './views');
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
@@ -49,11 +50,11 @@ seq.sequelize.sync()
 const routePlants = require("./routes/routePlants");
 const routeFilter = require("./routes/routeFilter");
 const routeUsers = require("./routes/routeUsers");
-const routeAuth = require("./routes/auth");
 app.use("/plants", routePlants);
 app.use("/filter", routeFilter);
 app.use("/users", routeUsers);
-app.use("/auth", routeAuth);
+//Routes
+const authRoute = require('./routes/auth.js')(app);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
