@@ -2,13 +2,15 @@ const bCrypt = require('bcrypt-nodejs');
 
 module.exports = function(passport, user) {
 
+    const Users = user;
+
     passport.serializeUser(function(user, done) {
         done(null, user.id);
     });
 
     passport.deserializeUser(function(id, done) {
 
-        User.findById(id).then(function(user) {
+        Users.findByPk(id).then(function(user) {
 
             if (user) {
 
@@ -24,7 +26,6 @@ module.exports = function(passport, user) {
 
     });
 
-    const Users = user;
     const LocalStrategy = require('passport-local').Strategy;
 
     passport.use('local-signup', new LocalStrategy(
@@ -83,6 +84,68 @@ module.exports = function(passport, user) {
 
             })
                 .catch(error => console.log("there is an error with user creation : ", error));
+
+        }
+
+    ));
+
+    //LOCAL SIGNIN
+    passport.use('local-signin', new LocalStrategy(
+        {
+            // by default, local strategy uses username and password, we will override with
+            usernameField: 'mail',
+            passwordField: 'password',
+            passReqToCallback: true // allows us to pass back the entire request to the callback
+        },
+
+
+        function(req, mail, password, done) {
+
+            const Users = user;
+
+            const isValidPassword = function(userPassword, password) {
+
+                return bCrypt.compareSync(password, userPassword);
+
+            }
+
+            Users.findOne({
+                where: {
+                    mail: mail
+                }
+            }).then(function(user) {
+
+                if (!user) {
+
+                    return done(null, false, {
+                        message: 'mail does not exist'
+                    });
+
+                }
+
+                if (!isValidPassword(user.password, password)) {
+
+                    return done(null, false, {
+                        message: 'Incorrect password.'
+                    });
+
+                }
+
+
+                const userInfo = user.get();
+                return done(null, userInfo);
+
+
+            }).catch(function(err) {
+
+                console.log("Error:", err);
+
+                return done(null, false, {
+                    message: 'Something went wrong with your Signin'
+                });
+
+            });
+
 
         }
 
