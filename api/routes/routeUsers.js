@@ -1,31 +1,29 @@
 const express = require('express');
 const router = express.Router();
 const ctrUsers = require("../controllers/controllerUsers");
-const passport = require("../app");
 
-router.post('/signup', passport.authenticate('local-signup', {
-    successRedirect: '/users/dashboard',
-    failureRedirect: '/users/signup'
-}));
+// Get All route
+router.get("/all", (req, res)  => ctrUsers.getAll(req, res));
+//Get One route
+router.get("/one", (req, res)  => ctrUsers.getOne(req, res));
 
-router.post('/signin', passport.authenticate('local-signin', {
-        successRedirect: '/users/dashboard',
+// Create a new Customer
+// router.post("/new", (req, res) => ctrUsers.create(req, res));
+/*
+// Retrieve all Customers
+router.get("/users", (req, res) => ctrUsers.findAll(req, res));
 
-        failureRedirect: '/users/signin'
-    }
+// Retrieve a single Customer with customerId
+router.get("/users/:customerId",(req, res) => ctrUsers.findOne(req, res));
 
-));
+// Update a Customer with customerId
+router.put("/users/:customerId", (req, res) => ctrUsers.update(req, res));
 
-function isLoggedIn(req, res, next) {
+// Delete a Customer with customerId
+router.delete("/users/:customerId", (req, res) => ctrUsers.delete(req, res));
 
-    if (req.isAuthenticated())
-
-        return next();
-
-    res.redirect('/users/signin');
-
-}
+// Create a new Customer
+router.delete("/users", (req, res) => ctrUsers.deleteAll(req, res));
 
 module.exports = router;
-
-
+*/
