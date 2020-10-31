@@ -19,7 +19,7 @@ Data.init({
         allowNull: false
     },
     dataTemperature:{
-        type: DataTypes.DECIMAL(2,2),
+        type: DataTypes.DECIMAL(4,2),
         allowNull: false
     },
     timeStamp:{
