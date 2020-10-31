@@ -8,5 +8,6 @@ router.get("/all", (req, res)  => ctrPots.getAll(req, res));
 router.get("/one", (req, res)  => ctrPots.getOne(req, res));
 // Get DayCount
 router.get("/dayCount", (req, res)  => ctrPots.getDayCount(req, res));
-
+// Delete one pot
+router.delete("/del", (req, res)  => ctrPots.delPot(req, res));
 module.exports = router;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="092038af-d64a-453c-b25a-fb495ea8fa7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/controllers/controllerPots.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/controllerPots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/routes/routePots.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/routePots.js" afterDir="false" />
     </list>
@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../integration_frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,7 +62,7 @@
       <workItem from="1603926705854" duration="435000" />
       <workItem from="1603960618962" duration="4367000" />
       <workItem from="1604150114501" duration="398000" />
-      <workItem from="1604150538783" duration="405000" />
+      <workItem from="1604150538783" duration="3986000" />
     </task>
     <servers />
   </component>
@@ -74,10 +74,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="172" key="#app.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604150901497" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603969274918">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604153899956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603969274918" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604153899956" />
     <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1602496493383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

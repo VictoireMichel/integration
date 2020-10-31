@@ -28,3 +28,14 @@ exports.getDayCount = function(req, res) {
         .then(results => res.json(results))
         .catch(error => res.status(400).json(error));
 };
+
+exports.delPot = function (req, res) {
+    Pots.destroy({
+        where:{
+            id: req.query.id
+        },
+        force: true
+    })
+        .then(results => res.json(results))
+        .catch(error => res.status(400).json(error));
+};
