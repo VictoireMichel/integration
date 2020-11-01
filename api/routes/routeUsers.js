@@ -2,28 +2,28 @@ const express = require('express');
 const router = express.Router();
 const ctrUsers = require("../controllers/controllerUsers");
 
-// Get All route
-router.get("/all", (req, res)  => ctrUsers.getAll(req, res));
-//Get One route
-router.get("/one", (req, res)  => ctrUsers.getOne(req, res));
+router.get("/successConnection", ctrUsers.successConnection);
+router.get('/successCreation', ctrUsers.succesCreation);
+router.get('/takenEmail', ctrUsers.takenEmail);
+router.get('/errorConnection', ctrUsers.errorConnection);
+router.get('/notConnected', ctrUsers.notConnected);
+router.get('/logout',ctrUsers.logout);
 
-// Create a new Customer
-// router.post("/new", (req, res) => ctrUsers.create(req, res));
-/*
-// Retrieve all Customers
-router.get("/users", (req, res) => ctrUsers.findAll(req, res));
+router.post('/signup', passport.authenticate('local-signup', {
+    successRedirect: '/users/successCreation',
+    failureRedirect: '/users/takenEmail'
+}));
 
-// Retrieve a single Customer with customerId
-router.get("/users/:customerId",(req, res) => ctrUsers.findOne(req, res));
+router.post('/signin', passport.authenticate('local-signin', {
+    successRedirect: '/users/successConnection',
+    failureRedirect: '/users/errorConnection'
+}));
 
-// Update a Customer with customerId
-router.put("/users/:customerId", (req, res) => ctrUsers.update(req, res));
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated())
+        return next();
+    res.redirect('/users/notConnected');
 
-// Delete a Customer with customerId
-router.delete("/users/:customerId", (req, res) => ctrUsers.delete(req, res));
-
-// Create a new Customer
-router.delete("/users", (req, res) => ctrUsers.deleteAll(req, res));
+}
 
 module.exports = router;
-*/
