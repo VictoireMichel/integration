@@ -1,5 +1,7 @@
 const Data = require("../models/modelData");
 
+console.log(Data);
+
 exports.getLast = function(req, res) {
     Data.findAll({
         attributes: [
