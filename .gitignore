@@ -3,3 +3,6 @@
 api/node_modules
 api/.env
 api/.idea/
+.idea/codeStyles/Project.xml
+.idea/dbnavigator.xml
+.idea/workspace.xml
