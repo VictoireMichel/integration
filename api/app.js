@@ -10,10 +10,11 @@ const exphbs = require('express-handlebars');
 
 
 //For Handlebars
-app.set('views', './views');
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
+app.set('views', './views');
+
 app.set('view engine', '.hbs');
 //////////////////////////////////////////////////////
 
@@ -50,11 +51,11 @@ seq.sequelize.sync()
 const routePlants = require("./routes/routePlants");
 const routeFilter = require("./routes/routeFilter");
 const routeUsers = require("./routes/routeUsers");
+const routePots = require("./routes/routePots");
 app.use("/plants", routePlants);
 app.use("/filter", routeFilter);
 app.use("/users", routeUsers);
-//Routes
-const authRoute = require('./routes/auth.js')(app);
+app.use("/pots", routePots);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
