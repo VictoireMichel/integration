@@ -5,6 +5,19 @@ require('dotenv').config();
 
 const session = require('express-session');
 
+///////////////// Views ///////////////////////////
+const exphbs = require('express-handlebars');
+
+
+//For Handlebars
+app.set('views', './views');
+app.engine('hbs', exphbs({
+    extname: '.hbs'
+}));
+app.set('view engine', '.hbs');
+//////////////////////////////////////////////////////
+
+
 ///////////////// Passport ///////////////////////////
 const passport = require('passport');
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
@@ -40,6 +53,8 @@ const routeUsers = require("./routes/routeUsers");
 app.use("/plants", routePlants);
 app.use("/filter", routeFilter);
 app.use("/users", routeUsers);
+//Routes
+const authRoute = require('./routes/auth.js')(app);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
