@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const ctrUsers = require("../controllers/controllerUsers");
+const passport = require("../app");
 
 router.get("/successConnection", ctrUsers.successConnection);
 router.get('/successCreation', ctrUsers.succesCreation);
