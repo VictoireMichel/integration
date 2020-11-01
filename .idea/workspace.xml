@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../integration_frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,6 +74,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="172" key="#app.js/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604150901497" />
+    <state x="1456" y="115" key="CommitChangelistDialog2" timestamp="1604236533936">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state x="1456" y="115" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1604236533936" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604153899956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -94,5 +98,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="275" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602496493383" />
+    <state x="1692" y="594" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604236540717">
+      <screen x="0" y="23" width="2560" height="1359" />
+    </state>
+    <state x="1692" y="594" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1359@0.23.2560.1359" timestamp="1604236540717" />
   </component>
 </project>
