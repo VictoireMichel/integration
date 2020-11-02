@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 require('dotenv').config();
-
+const path = require('path');
 const session = require('express-session');
 
 ///////////////// Views ///////////////////////////
@@ -63,10 +63,10 @@ app.use("/pots", routePots);
 //////////////////////////////////////////////////////
 
 ///////////////// ?????? /////////////////////////////
-/* simple test pour avoir un rendu sur le '/' lors du déploiement sur Heroku */
+/* Page HTML avec formulaire pour tester la requête POST pour l'ajout d'un pot */
 const PORT = process.env.PORT || '3000';
 app.get('/', (req,res) => {
-    res.send('Hello, there has been a change since last time');
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 //////////////////////////////////////////////////////
 

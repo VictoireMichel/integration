@@ -10,6 +10,9 @@ router.get("/one", (req, res)  => ctrPots.getOne(req, res));
 router.get("/dayCount", (req, res)  => ctrPots.getDayCount(req, res));
 // Delete one pot
 router.delete("/del", (req, res)  => ctrPots.delPot(req, res));
+//Add a pot
+router.post("/add", (req,res) => ctrPots.addPot(req, res));
+
 module.exports = router;
 
 function isLoggedIn(req, res, next) {
