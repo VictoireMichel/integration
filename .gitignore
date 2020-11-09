@@ -1,8 +1,5 @@
 /node_modules/
 .DS_Store
-api/node_modules
-api/.env
-api/.idea/
-.idea/codeStyles/Project.xml
-.idea/dbnavigator.xml
-.idea/workspace.xml
+node_modules
+.idea
+.envÒ

@@ -8,7 +8,6 @@ const session = require('express-session');
 ///////////////// Views ///////////////////////////
 const exphbs = require('express-handlebars');
 
-
 //For Handlebars
 app.engine('hbs', exphbs({
     extname: '.hbs'
@@ -69,6 +68,5 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 //////////////////////////////////////////////////////
-
 
 app.listen(PORT);
