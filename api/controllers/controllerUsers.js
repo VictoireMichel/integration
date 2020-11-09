@@ -27,3 +27,11 @@ exports.logout = function(req, res) {
     });
 
 }
+
+exports.updateLearningMode = function(req, res) {
+    Users.update(
+        { learningMode: req.query.learningMode},
+        { where: { id: req.query.id } }
+      ).then(results => res.json(results))
+      .catch(error => res.status(400).json(error));
+}
