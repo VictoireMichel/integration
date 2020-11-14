@@ -1,8 +1,18 @@
 const Users = require("../models/modelUsers");
 
 exports.successConnection = function(req, res) {
-    res.json('connection successful');
+    //res.json('connection successful');
     //res.render('successConnection');
+    Users.findAll({
+        attributes: [
+            'id',
+        ],
+        where: {
+            id: req.user.id
+        }
+    })
+        .then(results => res.json(results))
+        .catch(error => res.status(400).json(error));
 };
 
 exports.succesCreation = function(req, res){
