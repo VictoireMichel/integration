@@ -8,7 +8,7 @@ router.get('/successCreation', ctrUsers.succesCreation);
 router.get('/takenEmail', ctrUsers.takenEmail);
 router.get('/errorConnection', ctrUsers.errorConnection);
 router.get('/notConnected', ctrUsers.notConnected);
-router.get('/logout',ctrUsers.logout);
+router.get('/logout',isLoggedIn, ctrUsers.logout);
 router.patch('/updateLearningMode', (req,res) => ctrUsers.updateLearningMode(req, res))
 router.post('/signup', passport.authenticate('local-signup', {
     successRedirect: '/users/successCreation',
