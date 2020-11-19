@@ -1,15 +1,10 @@
 const Data = require("../models/modelData");
+const seq = require("../config/config");
+const Sequelize = seq.Sequelize, sequelize = seq.sequelize;
 
 exports.getLast = function(req, res) {
-    Data.findAll({
-        attributes: [
-            'dataLuminosity','dataHumidity', 'dataTemperature', 'timeStamp'
-        ],
-        where: {
-            potId: req.query.potId
-        }
-    })
-        .then(results => res.json(results))
+     sequelize.query('select dataLuminosity, dataHumidity, dataTemperature, timeStamp from Data where id = (SELECT max(id) from Data where potId = ' + req.query.potId + ' group by potId)')
+        .then(results => res.json(results[0]))
         .catch(error => res.status(400).json(error));
 };
 
