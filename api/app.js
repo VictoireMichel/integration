@@ -5,19 +5,6 @@ require('dotenv').config();
 const path = require('path');
 const session = require('express-session');
 
-///////////////// Views ///////////////////////////
-const exphbs = require('express-handlebars');
-
-//For Handlebars
-app.engine('hbs', exphbs({
-    extname: '.hbs'
-}));
-app.set('views', './views');
-
-app.set('view engine', '.hbs');
-//////////////////////////////////////////////////////
-
-
 ///////////////// Passport ///////////////////////////
 const passport = require('passport');
 app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret

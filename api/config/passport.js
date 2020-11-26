@@ -46,7 +46,7 @@ module.exports = function(passport, user) {
                 }
             }).then(function(user) {
                 if (user) {
-
+                    console.log('That email is already taken');
                     return done(null, false, {
                         message: 'That email is already taken'
                     });
@@ -65,7 +65,7 @@ module.exports = function(passport, user) {
                     Users.create(data).then(function(newUser, created) {
 
                         if (!newUser) {
-                            console.log("aa");
+                            console.log("error user creation");
                             return done(null, false, {
                                 message: "error user creation"
                             });
@@ -73,7 +73,7 @@ module.exports = function(passport, user) {
                         }
 
                         if (newUser) {
-
+                            console.log(newUser);
                             return done(null, newUser);
 
                         }
