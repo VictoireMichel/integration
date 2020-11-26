@@ -20,7 +20,7 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    res.json(req, res);
+    res.json(req);
 };
 
 exports.errorConnection = function(req, res){
