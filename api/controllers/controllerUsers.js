@@ -20,7 +20,7 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    console.log(req);
+    console.log(res);
     res.json('takenEmail');
 };
 
