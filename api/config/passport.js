@@ -36,7 +36,9 @@ module.exports = function(passport, user) {
         },
 
         function(req, mail, password, done) {
+            console.log("Je passe par là !");
             const generateHash = function(password) {
+                console.log("coucou password hash");
                 return bCrypt.hashSync(password, bCrypt.genSaltSync(8), null);
             };
 
