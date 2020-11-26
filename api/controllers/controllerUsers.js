@@ -20,7 +20,8 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    res.json(req);
+    console.log(req);
+    res.json('takenEmail');
 };
 
 exports.errorConnection = function(req, res){
