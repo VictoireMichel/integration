@@ -20,7 +20,6 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    console.log(req._passport);
     res.json('takenEmail');
 };
 
