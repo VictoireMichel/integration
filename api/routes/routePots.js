@@ -7,7 +7,7 @@ router.get("/user", isLoggedIn, (req, res)  => ctrPots.getPotByUserId(req, res))
 // Delete one pot
 router.delete("/del", (req, res)  => ctrPots.delPot(req, res));
 //Add a pot
-router.post("/add", (req,res) => ctrPots.addPot(req, res));
+router.post("/one", (req,res) => ctrPots.onePot(req, res));
 
 module.exports = router;
 

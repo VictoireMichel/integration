@@ -21,13 +21,13 @@ exports.delPot = function (req, res) {
         .catch(error => res.status(400).json(error));
 };
 
-exports.addPot = function (req, res){
+exports.onePot = function (req, res){
     Pots.create({
-            name: req.query.name,
-            needWater: req.query.needWater,
-            dayCount: req.query.dayCount,
-            plantId: req.query.plantId,
-            userId: req.query.userId,
+            name: req.body.name,
+            needWater: req.body.needWater,
+            dayCount: req.body.dayCount,
+            plantId: req.body.plantId,
+            userId: req.body.userId,
     }).then(results => res.json(results))
       .catch(error => res.status(400).json(error));
 }
