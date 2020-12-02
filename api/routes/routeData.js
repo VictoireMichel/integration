@@ -7,4 +7,6 @@ router.get("/last", (req, res)  => ctrData.getLast(req, res));
 // Post data
 router.post("/upload", (req, res)  => ctrData.postUpload(req, res));
 
+router.get("/humidityThreshold", (req, res) => ctrData.humidityThreshold(req, res));
+
 module.exports = router;
