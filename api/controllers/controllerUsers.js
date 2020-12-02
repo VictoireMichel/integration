@@ -1,4 +1,6 @@
 const Users = require("../models/modelUsers");
+const seq = require("../config/config");
+const sequelize = seq.sequelize;
 
 exports.successConnection = function(req, res) {
     //res.json('connection successful');
@@ -38,6 +40,12 @@ exports.logout = function(req, res) {
 
 }
 
+exports.getLearningMode = function(req, res) {
+    sequelize.query('select learningMode from Users where id = ' + req.query.id)
+       .then(results => res.json(results[0][0].learningMode))
+       .catch(error => res.status(400).json(error));
+};
+
 exports.updateLearningMode = function(req, res) {
     Users.update(
         { learningMode: req.query.learningMode},
@@ -45,3 +53,4 @@ exports.updateLearningMode = function(req, res) {
       ).then(res.json(req.query.learningMode))
       .catch(error => res.status(400).json(error));
 }
+
