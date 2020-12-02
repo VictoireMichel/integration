@@ -9,10 +9,11 @@ exports.getPotByUserId = function(req, res) {
         .then(results => {
             let createdAt = new Date(results[0].createdAt);
             let now = new Date(Date.now());
-            let diff = createdAt - now;
+            let diff = Math.trunc(now - createdAt);
             let diffDays = diff /(1000*60*60*24);
             console.log(diffDays);
-            res.send("ok");
+            results[0].dayCount = diffDays;
+            res.send(results);
         })
         .catch(error => res.status(400).json(error));
 };
