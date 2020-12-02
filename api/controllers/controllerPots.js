@@ -6,7 +6,7 @@ exports.getPotByUserId = function(req, res) {
             userId: req.query.userId
         }
     })
-        .then((results) => addDayCount(req, res, results))
+        .then(results => res.send(results))
         .catch(error => res.status(400).json(error));
 };
 
