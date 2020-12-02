@@ -1,6 +1,5 @@
 const {Sequelize, Model, DataTypes, QueryInterface} = require("sequelize");
 const db = require("./db");
-console.log(db);
 const sequelize = new Sequelize(db);
 
 sequelize.authenticate()

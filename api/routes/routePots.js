@@ -5,9 +5,9 @@ const ctrPots = require("../controllers/controllerPots");
 // Get PlantId
 router.get("/user", isLoggedIn, (req, res)  => ctrPots.getPotByUserId(req, res));
 // Delete one pot
-router.delete("/del", (req, res)  => ctrPots.delPot(req, res));
+router.delete("/del", isLoggedIn, (req, res)  => ctrPots.delPot(req, res));
 //Add a pot
-router.post("/one", (req,res) => ctrPots.onePot(req, res));
+router.post("/one", isLoggedIn, (req,res) => ctrPots.onePot(req, res));
 
 module.exports = router;
 

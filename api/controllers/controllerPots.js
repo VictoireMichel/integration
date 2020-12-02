@@ -6,7 +6,7 @@ exports.getPotByUserId = function(req, res) {
             userId: req.query.userId
         }
     })
-        .then(results => res.json(results))
+        .then(results => addDayCount(req, res, results))
         .catch(error => res.status(400).json(error));
 };
 
@@ -30,4 +30,12 @@ exports.onePot = function (req, res){
             userId: req.body.userId,
     }).then(results => res.json(results))
       .catch(error => res.status(400).json(error));
+};
+
+const addDayCount = function(req, res, results){
+    let createdAt = new Date(results.createdAt);
+    let now = new Date(Date.now());
+    let diff = createdAt - now;
+    let diffDays = diff /(1000*60*60*24);
+    res.send(diffDays);
 }
