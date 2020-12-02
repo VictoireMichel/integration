@@ -11,7 +11,8 @@ exports.getPotByUserId = function(req, res) {
             let now = new Date(Date.now());
             let diff = createdAt - now;
             let diffDays = diff /(1000*60*60*24);
-            res.send(diffDays);
+            console.log(diffDays);
+            res.send("ok");
         })
         .catch(error => res.status(400).json(error));
 };
