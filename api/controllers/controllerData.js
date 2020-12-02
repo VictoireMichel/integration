@@ -25,6 +25,6 @@ exports.postUpload = function(req, res) {
 
 exports.humidityThreshold = function(req, res) {
     sequelize.query('select humidity from Plants where id = (select plantId from Pots where id = '+ req.query.potId +')')
-    .then(results => res.json(results[0]))
+    .then(results => res.json(results[0][0]))
     .catch(error => res.status(400).json(error));
 };
