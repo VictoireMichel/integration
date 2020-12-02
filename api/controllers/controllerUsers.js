@@ -42,6 +42,6 @@ exports.updateLearningMode = function(req, res) {
     Users.update(
         { learningMode: req.query.learningMode},
         { where: { id: req.query.id } }
-      ).then(results => res.json(results))
+      ).then(res.json(req.query.learningMode))
       .catch(error => res.status(400).json(error));
 }
