@@ -20,15 +20,15 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    res.json('takenEmail');
+    res.status(400).json('takenEmail');
 };
 
 exports.errorConnection = function(req, res){
-    res.json('email/password incorrect');
+    res.status(400).json('email/password incorrect');
 };
 
 exports.notConnected = function(req, res){
-    res.json('notConnected');
+    res.status(401).json('notConnected');
 };
 
 exports.logout = function(req, res) {
