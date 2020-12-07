@@ -38,7 +38,7 @@ exports.logout = function(req, res) {
         res.json('endConnection');
     });
 
-}
+};
 
 exports.getLearningMode = function(req, res) {
     sequelize.query('select learningMode from Users where id = ' + req.query.id)
@@ -52,5 +52,4 @@ exports.updateLearningMode = function(req, res) {
         { where: { id: req.query.id } }
       ).then(res.json(req.query.learningMode))
       .catch(error => res.status(400).json(error));
-}
-
+};
