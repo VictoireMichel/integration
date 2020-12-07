@@ -1,4 +1,3 @@
-
 module.exports = function(passport, user) {
     const bCrypt = require('bcrypt-nodejs');
     const Users = user;

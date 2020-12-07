@@ -39,7 +39,3 @@ exports.onePot = function (req, res){
     }).then(results => res.json(results))
       .catch(error => res.status(400).json(error));
 };
-
-const addDayCount = function(req, res, results){
-
-}

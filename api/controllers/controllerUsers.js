@@ -41,8 +41,7 @@ exports.logout = function(req, res) {
 exports.deleteOne = function(req, res) {
     Users.destroy({
         where:{
-            mail: req.body.mail,
-            password: req.body.password
+            mail: req.body.mail
         },
         force: true
     })
