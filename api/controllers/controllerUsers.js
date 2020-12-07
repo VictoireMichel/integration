@@ -22,15 +22,15 @@ exports.succesCreation = function(req, res){
 };
 
 exports.takenEmail = function(req, res){
-    res.json('takenEmail');
+    res.status(400).json('takenEmail');
 };
 
 exports.errorConnection = function(req, res){
-    res.json('email/password incorrect');
+    res.status(400).json('email/password incorrect');
 };
 
 exports.notConnected = function(req, res){
-    res.json('notConnected');
+    res.status(401).json('notConnected');
 };
 
 exports.logout = function(req, res) {
@@ -50,6 +50,6 @@ exports.updateLearningMode = function(req, res) {
     Users.update(
         { learningMode: req.query.learningMode},
         { where: { id: req.query.id } }
-      ).then(res.json(req.query.learningMode))
+      ).then(results => res.json(results))
       .catch(error => res.status(400).json(error));
 };
