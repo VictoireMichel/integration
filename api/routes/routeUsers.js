@@ -20,6 +20,8 @@ router.post('/signin', passport.authenticate('local-signin', {
     failureRedirect: '/users/errorConnection'
 }));
 
+router.delete('/one', (req, res) => ctrUsers.deleteOne(req, res));
+
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated())
         return next();

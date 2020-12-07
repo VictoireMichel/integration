@@ -36,7 +36,19 @@ exports.logout = function(req, res) {
         res.json('endConnection');
     });
 
-}
+};
+
+exports.deleteOne = function(req, res) {
+    Users.destroy({
+        where:{
+            mail: req.body.mail,
+            password: req.body.password
+        },
+        force: true
+    })
+    .then(results => res.json(results))
+    .catch(error => res.status(400).send("Error while deleting an account : ", error));
+};
 
 exports.updateLearningMode = function(req, res) {
     Users.update(
@@ -44,4 +56,4 @@ exports.updateLearningMode = function(req, res) {
         { where: { id: req.query.id } }
       ).then(results => res.json(results))
       .catch(error => res.status(400).json(error));
-}
+};
