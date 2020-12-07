@@ -1,7 +1,5 @@
-const bCrypt = require('bcrypt-nodejs');
-
 module.exports = function(passport, user) {
-
+    const bCrypt = require('bcrypt-nodejs');
     const Users = user;
 
     passport.serializeUser(function(user, done) {

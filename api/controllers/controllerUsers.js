@@ -46,6 +46,17 @@ exports.getLearningMode = function(req, res) {
        .catch(error => res.status(400).json(error));
 };
 
+exports.deleteOne = function(req, res) {
+    Users.destroy({
+        where:{
+            mail: req.body.mail
+        },
+        force: true
+    })
+    .then(results => res.send("account deleted."))
+    .catch(error => res.status(400).send("Error while deleting an account : ", error));
+};
+
 exports.updateLearningMode = function(req, res) {
     Users.update(
         { learningMode: req.query.learningMode},
