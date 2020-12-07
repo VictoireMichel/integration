@@ -1,0 +1,92 @@
+{
+  "img_favicon": "https://lh3.googleusercontent.com/knSAdwdqV8t9VrTxGRoTcRxqWuE4iuusbTS1599YkrPicHc0UymVRLdY2fbQjwo9JDxHHHjGrhuwL_CHmUZCa7Rmqw",
+  "img_logo_nav": "https://lh3.googleusercontent.com/knSAdwdqV8t9VrTxGRoTcRxqWuE4iuusbTS1599YkrPicHc0UymVRLdY2fbQjwo9JDxHHHjGrhuwL_CHmUZCa7Rmqw",
+  "img_logo_footer": "https://lh3.googleusercontent.com/knSAdwdqV8t9VrTxGRoTcRxqWuE4iuusbTS1599YkrPicHc0UymVRLdY2fbQjwo9JDxHHHjGrhuwL_CHmUZCa7Rmqw",
+  "img_logo_GitHub": "https://lh3.googleusercontent.com/zRSwqijyBDqtgAoJlL4x9GIHSwIkyKBSW1HrjF4-M8zbuuTUcFEdIwguQW6UGWUvjDp1ByJiCidC5W07dSKhZbQ1Sw",
+  "header_nav": {
+    "nav1": {
+      "text": "Projet",
+      "show_or_hide": true
+    },
+    "nav2": {
+      "text": "RSE",
+      "show_or_hide": true
+    },
+    "nav3": {
+      "text": "Membres",
+      "show_or_hide": true
+    },
+    "nav4": {
+      "text": "Contact",
+      "show_or_hide": true
+    }
+  },
+  "introduction": {
+    "header": "Bienvenue sur le site eGrow",
+    "subheader": "Ceci est notre projet d'intégration",
+    "img_logo": "https://lh3.googleusercontent.com/knSAdwdqV8t9VrTxGRoTcRxqWuE4iuusbTS1599YkrPicHc0UymVRLdY2fbQjwo9JDxHHHjGrhuwL_CHmUZCa7Rmqw",
+    "img_background": "https://lh3.googleusercontent.com/PVdRIIPFLvxVN32gT2OIzey9qLOQxc8XnUtuOnVXWFcNm-T4nDj0LE3w79x6Mj-YG8S1BYHap2h5Q5RTvmke3DZtTac"
+  },
+  "features":{
+    "feature-4": {
+      "header": "Projet eGrow",
+      "subheader1": "En lien avec les objectifs de développement durable définit par les Nations Unies en 2015, nous avons eu pour but de créer un produit qui promeut l’éducation et un mode de vie plus durable.",
+      "subheader2": "Notre projet se base sur le principe de l’écologie et de son apprentissage. On espère ainsi aider les personnes qui veulent commencer à faire pousser leurs plantes par elles-mêmes et qui ne savent pas forcément comment s’y prendre. Pour les enfants, cela pourrait être un début de sensibilisation à la cause écologique.",
+      "subheader3": "Nous avons créé un pot qui permet de planter n'importe quel type de plantes dans lequel on a inséré des sondes qui mesurent le taux d’humidité, la température de l’air ambiant et la luminosité de la plante.",
+      "subheader4": "Nous avons développé une application mobile qui permet d'interfacer toute la gestion de votre plante. Vous pourrez y trouver toutes les données de votre plante. Cette application vous permet de programmer un arrosage automatique de votre plante, vous n'aurez donc plus à vous en soucier.",
+      "subheader5": "L'application dispose aussi d'une grande base de données regroupant",
+      "article1Header": "Notre application eGrow possède 2 modes d'utilisations",
+      "article1Text1": "Un mode orienté sur l’apprentissage (mode enfant) c’est-à-dire qu’elle indiquera à l’utilisateur comment s’occuper de sa plante (arrosage, exposition au soleil, …) ainsi que les caractéristiques de celle-ci. Ce qui lui permettra d’apprendre à le faire. Il sera notifié dès qu’une opération sera à faire.",
+      "article1Text2": "Un autre mode simple où l’arrosage est automatique et où l’utilisateur sera moins suivi par l’application.",
+      "article2Header": "A qui s'adresse notre produit ?",
+      "article2Text": "Notre produit s'adresse d'abord aux jeunes qui aimeraient découvrir les joies du jardinnage. Mais aussi à tout autre personnes désirant avoir l'esprit tranquille sans avoir à se soucier d'arroser sa plante chaque jour.",
+      "img_1": "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "img_2" : "https://lh3.googleusercontent.com/6ZCFEzkNMqFqCdaST2H2LIGNecCuMRVUkK5acU9loMSgAgMZO-eMa_pWmB0zaob4qEr6oAQir2YHJCZ4ifNZ8y2Z"
+    }
+  },
+  "projects": {
+    "header": "Notre Responsabilité Sociétale",
+    "subheader": "Voici quelques uns de nos engagements ",
+    "header1": "Pot en bois",
+    "texte1": "Notre but étant de respecter un maximum notre environnement, nous avons opté pour une conception en bois issu de gestion contrôlée de forêts.",
+    "texte11" : "Notre but sur le long terme serait de produire le même produit, mais sans le pot. On obtiendrait alors uniquement un système adaptable à n'importe quel type de pot de fleurs, équipé d'un réservoir d'eau. ",
+    "header2": "Garantie à vie",
+    "texte2": "Toujours dans une optique de consommation responsable, nous offrons à nos clients une garantie à vie sur notre produit. Cela dans le but de moins consommer et de moins produire.",
+    "texte22": "Et puis, nous nous permettons de d'offrir cela car nous sommes sûr de la qualité de notre produit !",
+    "header3": "Acteurs locaux",
+    "texte3": "Nous mettons un point d'honneur à contribuer avec des fournisseurs locaux. L'ensemble de nos fournisseurs pour la conception de notre produit proviennent d'Europe et sont de confiance.",
+    "texte33": "Cela nous permet un meilleur suivi des matériaux et contribue aussi à un monde plus juste.",
+    "img_1": "https://lh3.googleusercontent.com/FCloqiVOm8hiEXDz55FjryKrMpuke2vVlNHUrHZfqeOot117XX4f0G4kFUvGbx1-9HzRuFlDhTcbDkBo9EWlnjXN",
+    "img_2": "https://lh3.googleusercontent.com/Syknp63BFN9STUW33BB035ATm5OZuCCAGrgbh3tSbYR7nhKgGDzFYX1Bden_4VIs5I1WFvp5beai99-FeT25oAuFMg",
+    "img_3": "https://lh3.googleusercontent.com/vHN7Rb4KKxRvbKwMeV0rpafssAJ2w2VrEScPwbttWxRFRU8Irk7cY0IxkCFIYSa1Z3hi7nLR8AKAW9_ZYdIxLhunSg"
+  },
+  "groupe": {
+    "header": "Membres Du Projet",
+    "subheader": "Voici une description brève du ressenti de chacun par rapport à ce projet",
+    "robinImg": "https://lh3.googleusercontent.com/wACqhqXtMqirJFddM8OPkAaI_fDPHz95OnMYRTMxGLFSnDvUTqu4uIh4PY9qmYxJMsVIpJIJtGf9nfU3_oSnTOmQ",
+    "robinText": "Ce projet m'a permis d'acquérir une bonne expérience dans le développement d'une application Mobile. Ayant touché à presque tous les aspects de notre application, j'ai appris à maîtriser des « framework » qui m’étaient inconnus il y a de ça 3 mois.",
+    "louisImg": "https://lh3.googleusercontent.com/PWAlX7u3b6nVKEthRIGDx9SWGEjeVC68Ujr-W9b_vDLSjZnKcJtQxeFUVQVANvzZ4TUXezZv8CHnOMNvZUQ5Ffy9",
+    "louisText": "Under Construction, content will be available ASAP",
+    "rodrigueImg": "https://lh3.googleusercontent.com/JhtXZ5fs13eNfk7YbGiIQ1u5J3HNxM2sCDIMpkE6o9vXM0xwHhYUPDLlk3N85HcI4nTlbpCBNz7gBfFBwKGCt6RQRC0",
+    "rodrigueText": "L’idée « projet d’intégration » est quelque chose que j’ai trouvé fort intéressant car on se rapproche plus ici de ce qui pourrait être notre futur job.",
+    "igorImg": "https://lh3.googleusercontent.com/F7CUyzIJYHFbenA2dOoZsBomi_WgyGZg5q1kkMpsxYnYXQaHNxirSdYCXHdykerEvrbNw_AvMjeUvrmamQCPtu7xvw",
+    "igorText": "Under Construction, content will be available ASAP",
+    "victorImg": "https://lh3.googleusercontent.com/dahwZEzDb2gKmj1uhojc4TwlSdbaxn1F6o_dDYKsJ1O6HkB155ya1ejov0J3NNfOkasmI4YTSve-mPfrpHB_POc_Zxs",
+    "victorText": "Ce travail de groupe à été fructueux, il m'a permit d'en apprendre davantage sur le développement full stack. Ce projet nous permet de faire déjà un premier pas sur ce qui sera pour nous le monde du travail plus tards",
+    "leonImg": "https://lh3.googleusercontent.com/5zF-V1kJ7MdWm6dyjvEuynT39AQU8coEmHuTR9aoC0TwvtSIVPxSX8wqnC1L-PkfMZVEQe5nrj7C9Hr4VMZkdI0vxEE",
+    "leonText": "J'ai beaucoup appris des nouvelles choses sur Arduino et son fonctionnement, j'aime bien l'aspect électronique en général et je suis ravi d'avoir fait cette partie pour ce projet.",
+    "victoireImg": "https://lh3.googleusercontent.com/ojLjAR1VDwQ7hfATvSTb4DX3s2SQ5UHF5rsWWF0eEypoIJ36oOcOb0L1vqwTPEg3K3rHOd6yHmV9FdvfwO9OxgQqAA",
+    "victoireText": "J'ai beaucoup apprécié travailler sur une application car c'était une première pour moi cependant, le choix du framework, au final, ne m'a pas satisfait. Je n'ai pas pris autant de plaisir à travailler dessus que pour le projet de l'année dernière par exemple"
+  },
+  "contact": {
+    "header": "Vous voulez nous contacter ? ",
+    "subheader": "Vous pouvez en remplissant le formulaire ci-dessous nous faire part d'un message."
+  },
+
+  "social": {
+    "GitHub": {
+      "link": "https://github.com/VictoireMichel/integration_frontend/wiki",
+      "show_or_hide": true
+    }
+  }
+}
