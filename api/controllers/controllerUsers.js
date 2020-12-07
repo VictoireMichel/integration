@@ -46,7 +46,7 @@ exports.deleteOne = function(req, res) {
         },
         force: true
     })
-    .then(results => res.json(results))
+    .then(results => res.send("account deleted."))
     .catch(error => res.status(400).send("Error while deleting an account : ", error));
 };
 
