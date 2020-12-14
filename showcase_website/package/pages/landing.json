@@ -13,10 +13,14 @@
       "show_or_hide": true
     },
     "nav3": {
-      "text": "Membres",
+      "text": "Application",
       "show_or_hide": true
     },
     "nav4": {
+      "text": "Membres",
+      "show_or_hide": true
+    },
+    "nav5": {
       "text": "Contact",
       "show_or_hide": true
     }
@@ -60,6 +64,14 @@
     "img_2": "https://lh3.googleusercontent.com/Syknp63BFN9STUW33BB035ATm5OZuCCAGrgbh3tSbYR7nhKgGDzFYX1Bden_4VIs5I1WFvp5beai99-FeT25oAuFMg",
     "img_3": "https://lh3.googleusercontent.com/vHN7Rb4KKxRvbKwMeV0rpafssAJ2w2VrEScPwbttWxRFRU8Irk7cY0IxkCFIYSa1Z3hi7nLR8AKAW9_ZYdIxLhunSg"
   },
+  "app" : {
+    "header": "Télécharger notre application",
+    "text": "Sur ce lien, vous trouverez le fichier APK de notre application qui vous permettra de l'installer sur votre appareil Android.",
+    "hLink": "eGrow",
+    "download": "Télécharger",
+    "link": "https://github.com/VictoireMichel/integration_frontend/raw/newDevOps/Fichier%20APK/eGrow.apk",
+    "image": "https://lh3.googleusercontent.com/v1Ktmv7W0uv6MXNL-rpW2Hk7XyUia8hzvkPagM1tWYrL9DPuNWpXUMdnr1qyduBBDQymuMfSW6jXERBzgmrCpD1ZO_90czBTTCnA-w"
+  },
   "groupe": {
     "header": "Membres Du Projet",
     "subheader": "Voici une description brève du ressenti de chacun par rapport à ce projet",
@@ -82,11 +94,8 @@
     "header": "Vous voulez nous contacter ? ",
     "subheader": "Vous pouvez en remplissant le formulaire ci-dessous nous faire part d'un message."
   },
-
-  "social": {
-    "GitHub": {
-      "link": "https://github.com/VictoireMichel/integration_frontend/wiki",
-      "show_or_hide": true
-    }
+  "footer": {
+    "text": "Github",
+    "githubLink": "https://github.com/VictoireMichel/integration_frontend/wiki"
   }
 }

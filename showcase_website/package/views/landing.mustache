@@ -43,15 +43,21 @@
 
                         {{#page.header_nav.nav3.show_or_hide}}
                             <li class="nav-item">
-                                <a style="color: #ffffff; background-color: #336666; border-radius: 10%;opacity: 0.8" class="nav-link" href="#membres">{{page.header_nav.nav3.text}}</a>
+                                <a style="color: #ffffff; background-color: #336666; border-radius: 10%;opacity: 0.8" class="nav-link" href="#lien">{{page.header_nav.nav3.text}}</a>
                             </li>
                         {{/page.header_nav.nav3.show_or_hide}}
 
                         {{#page.header_nav.nav4.show_or_hide}}
                             <li class="nav-item">
-                                <a style="color: #ffffff; background-color: #336666; border-radius: 10%;opacity: 0.8" class="nav-link" href="#contact">{{page.header_nav.nav4.text}}</a>
+                                <a style="color: #ffffff; background-color: #336666; border-radius: 10%;opacity: 0.8" class="nav-link" href="#membres">{{page.header_nav.nav4.text}}</a>
                             </li>
                         {{/page.header_nav.nav4.show_or_hide}}
+
+                        {{#page.header_nav.nav5.show_or_hide}}
+                            <li class="nav-item">
+                                <a style="color: #ffffff; background-color: #336666; border-radius: 10%;opacity: 0.8" class="nav-link" href="#contact">{{page.header_nav.nav5.text}}</a>
+                            </li>
+                        {{/page.header_nav.nav5.show_or_hide}}
                     </ul>
                 </div>
             </nav>
@@ -171,6 +177,72 @@
         </div>
     </section>
 
+    <!-- Telecharger Application -->
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+    <section id="lien" class="py-5 pricing-block" style="background:#f9f9f9">
+        <div class="container py-5">
+            <div class="row block-header">
+                <div class="col-sm-8 mx-auto text-center">
+                    <h1 class="display-4 mt-2 section-title">{{page.app.header}}</h1>
+                    <hr>
+                    <p class="lead">{{page.app.text}}</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div style="display: block; margin-left: auto; margin-right: auto">
+                    <div class="pricing active">
+                        <p style="padding: 1rem;font-size: 1rem;font-weight: 600;border-bottom: 1px solid #f1f2f3;background-color: #fcfdfe;">{{page.app.hLink}}</p>
+                        <div style="margin-bottom: 20px" class="container">
+                            <img src="{{page.app.image}}" alt="Avatar" class="image" style="width:100%">
+                            <div class="middle">
+                                <div><a class="text" href="{{page.app.link}}">{{page.app.download}}</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!---Membres du projet--->
     <section id="membres" class="py-md-5 block testimonial-block">
         <div class="container py-5">
@@ -276,18 +348,13 @@
         </div>
     </section>
 
-
+<!--FOOTER-->
     <footer class="pt-3">
         <div class="container pt-5 pb-5">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><img class="img-logo-footer" src="{{{page.img_logo_footer}}}=s200"/></p>
-
-                    <ul class="list-inline social social-white-alt social-rounded social-sm mb-0">
-                        {{#page.social.GitHub.show_or_hide}}
-                            <li class="list-inline-item"><a href="{{{page.social.GitHub.link}}}" target="_blank"><i class="fa fa-github"></i></a></li>
-                        {{/page.social.GitHub.show_or_hide}}
-                    </ul>
+                    <p  style="font-size: 20px; color: #ffffff">{{page.footer.text}}</p>
+                    <p><a target="_blank" href="{{page.footer.githubLink}}"><img class="img-logo-footer" src="{{{page.img_logo_footer}}}=s200"/></a></p>
                 </div>
             </div>
         </div>

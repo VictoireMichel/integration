@@ -297,14 +297,6 @@ footer {
     -webkit-transition: .5s;
     transition: .5s;
 }
-.pricing-block .pricing .plan-term {
-    padding: 1rem;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    border-bottom: 1px solid #f1f2f3;
-    background-color: #fcfdfe;
-}
 .pricing-block .pricing .price {
     font-weight: 600;
     font-size: 4rem;
