@@ -43,7 +43,7 @@
       "article1Text1": "Un mode orienté sur l’apprentissage (mode enfant) c’est-à-dire qu’elle indiquera à l’utilisateur comment s’occuper de sa plante (arrosage, exposition au soleil, …) ainsi que les caractéristiques de celle-ci. Ce qui lui permettra d’apprendre à le faire. Il sera notifié dès qu’une opération sera à faire.",
       "article1Text2": "Un autre mode simple où l’arrosage est automatique et où l’utilisateur sera moins suivi par l’application.",
       "article2Header": "A qui s'adresse notre produit ?",
-      "article2Text": "Notre produit s'adresse d'abord aux jeunes qui aimeraient découvrir les joies du jardinnage. Mais aussi à tout autre personnes désirant avoir l'esprit tranquille sans avoir à se soucier d'arroser sa plante chaque jour.",
+      "article2Text": "Notre produit s'adresse d'abord aux jeunes qui aimeraient découvrir les joies du jardinage. Mais aussi à toutes les personnes désirant avoir l'esprit tranquille sans avoir à se soucier d'arroser sa plante chaque jour.",
       "img_1": "https://images.unsplash.com/photo-1463320898484-cdee8141c787?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
       "img_2" : "https://lh3.googleusercontent.com/6ZCFEzkNMqFqCdaST2H2LIGNecCuMRVUkK5acU9loMSgAgMZO-eMa_pWmB0zaob4qEr6oAQir2YHJCZ4ifNZ8y2Z"
     }
@@ -52,11 +52,11 @@
     "header": "Notre Responsabilité Sociétale",
     "subheader": "Voici quelques uns de nos engagements ",
     "header1": "Pot en bois",
-    "texte1": "Notre but étant de respecter un maximum notre environnement, nous avons opté pour une conception en bois issu de gestion contrôlée de forêts.",
-    "texte11" : "Notre but sur le long terme serait de produire le même produit, mais sans le pot. On obtiendrait alors uniquement un système adaptable à n'importe quel type de pot de fleurs, équipé d'un réservoir d'eau. ",
-    "header2": "Garantie à vie",
-    "texte2": "Toujours dans une optique de consommation responsable, nous offrons à nos clients une garantie à vie sur notre produit. Cela dans le but de moins consommer et de moins produire.",
-    "texte22": "Et puis, nous nous permettons de d'offrir cela car nous sommes sûr de la qualité de notre produit !",
+    "texte1": "Notre but étant de respecter un maximum notre environnement, nous avons opté à l'utilisation du bois pour la conception du pot. Ce choix nous a semblé judicieux car le bois que nous utiliserons sera entièrement recyclé. ",
+    "texte11" : "Notre objectif sur le long terme serait de produire le même produit, mais sans le pot. On obtiendrait alors uniquement un système adaptable à n'importe quel type de pot de fleurs, équipé d'un réservoir d'eau. ",
+    "header2": "Investissement à vie",
+    "texte2": "Toujours dans une optique de consommation responsable, nous offrons à nos clients la possibilité de remplacer les pièces défectueuses de notre système. Cela dans le but de moins consommer et de moins produire.",
+    "texte22": "Cela permet donc d'éviter le rachat d'un nouveau pot, ce qui prolonge la durée de vie de notre produit.",
     "header3": "Acteurs locaux",
     "texte3": "Nous mettons un point d'honneur à contribuer avec des fournisseurs locaux. L'ensemble de nos fournisseurs pour la conception de notre produit proviennent d'Europe et sont de confiance.",
     "texte33": "Cela nous permet un meilleur suivi des matériaux et contribue aussi à un monde plus juste.",
@@ -69,7 +69,7 @@
     "text": "Sur ce lien, vous trouverez le fichier APK de notre application qui vous permettra de l'installer sur votre appareil Android.",
     "hLink": "eGrow",
     "download": "Télécharger",
-    "link": "https://github.com/VictoireMichel/integration_frontend/raw/newDevOps/Fichier%20APK/eGrow.apk",
+    "link": "https://github.com/VictoireMichel/integration_frontend/raw/newDevOps/APK/eGrow.apk",
     "image": "https://lh3.googleusercontent.com/v1Ktmv7W0uv6MXNL-rpW2Hk7XyUia8hzvkPagM1tWYrL9DPuNWpXUMdnr1qyduBBDQymuMfSW6jXERBzgmrCpD1ZO_90czBTTCnA-w"
   },
   "groupe": {
